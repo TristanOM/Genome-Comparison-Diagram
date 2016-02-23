@@ -1,0 +1,24 @@
+Function writeFasta
+    Parses through a gene bank file and writes each gene feature as its own seperate fasta formated record in one file.
+    Attempts to use possible IDs for each gene in the file.
+    1. Attempts to use the qualifier called protien_id
+    2.if not present attempts to use the qualifier called gene
+    3. If neither qualifiers exist it uses the id 'no_id'
+
+     Parameters:
+            Filename: Name of Genbank file to be parsed
+            FastaFileName: Name of fasta file to be created
+            handle1: handle that opens the Genbank file
+            record1: SeqIO that reads the Genbank file
+      returns: nothing
+
+
+Main
+    creates 2 fasta files out of two Genbank files
+
+    parameters:
+                GBFilename2: name of first genBank file to use
+                GBFilename1:name of second genbank file to use
+                FastaFileName1: name of the first fasta file to be written using the first genbank file
+                FastaFileName2: name of the second fasta file to be written using the second genbank file
+

@@ -1,0 +1,16 @@
+Function: get_feature
+    finds and returns specified feature
+
+    parameters:
+                features- list of features in gd diagram
+                id- the identification of the gene trying to be found in features
+                tags- list of tags that need to be searched under in features to match the ID
+    return: feature that is a match to the id
+
+Function: getCrossLinks
+    parses through the csv file with the blast results of comparing to bacterial genomes
+
+    parameters:
+                filename- name of the csv file to parse
+                A_v_B- tuple of the names of the genes matches and there percent match (% match, genename, genename)
+    return : tuple of all the matches in the blast csv file
